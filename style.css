@@ -1,0 +1,19 @@
+:root { --orange:#ff7333; --cream:#fff4e1; --ink:#3c1e14; }
+* { box-sizing:border-box; margin:0 }
+body { font-family: ui-rounded, "SF Pro Rounded", system-ui, sans-serif; background:var(--cream); color:var(--ink); line-height:1.55 }
+main { max-width:980px; margin:0 auto; padding:32px 22px 60px }
+a { color:var(--orange) }
+header { display:flex; align-items:center; gap:12px; font-weight:800; font-size:22px }
+header img { width:44px; border-radius:11px }
+.hero { display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center; margin-top:48px }
+h1 { font-size:clamp(40px,7vw,68px); line-height:1; letter-spacing:-.03em }
+.lead { font-size:20px; margin:20px 0 28px; opacity:.8 }
+.btn { display:inline-block; background:var(--ink); color:#fff; text-decoration:none; padding:15px 24px; border-radius:14px; font-weight:700 }
+.phones { display:flex; gap:14px }
+.phones img { width:50%; border-radius:26px; box-shadow:0 30px 60px -30px rgba(60,30,20,.5); border:6px solid #1c1c1e }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:70px }
+.grid div { background:#fff; border-radius:20px; padding:22px }
+.grid b { display:block; font-size:19px; margin-bottom:6px }
+.legal { max-width:720px } .legal h1 { font-size:40px; margin:30px 0 10px } .legal h2 { margin:26px 0 6px; font-size:21px }
+footer { margin-top:70px; font-size:14px; opacity:.7; display:flex; gap:18px; flex-wrap:wrap }
+@media (max-width:760px){ .hero,.grid{ grid-template-columns:1fr } }
